@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" styleClass="pantalla" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ConsultaEstadosController">
+
+    <children>
+
+        <Label alignment="CENTER" layoutX="225.0" layoutY="14.0" prefHeight="32.0" prefWidth="150.0" styleClass="titulo-pantalla" text="CONSULTA DE ESTADOS" textAlignment="CENTER" />
+        <Label layoutX="70.0" layoutY="72.0" styleClass="subtitulo" text="TIPO" />
+        <ComboBox fx:id="cmbTipoRegistro" layoutX="116.0" layoutY="68.0" prefHeight="25.0" prefWidth="150.0" />
+        <Label layoutX="321.0" layoutY="72.0" styleClass="subtitulo" text="ESTADO" />
+        <ComboBox fx:id="cmbEstado" layoutX="380.0" layoutY="68.0" prefHeight="25.0" prefWidth="150.0" />
+
+        <TableView fx:id="tablaSocios" layoutX="35.0" layoutY="130.0" prefHeight="220.0" prefWidth="530.0">
+            <columns>
+                <TableColumn fx:id="colIdSocio" prefWidth="80.0" text="Nro. Socio" />
+                <TableColumn fx:id="colNombreSocio" prefWidth="110.0" text="Nombre" />
+                <TableColumn fx:id="colApellidoSocio" prefWidth="110.0" text="Apellido" />
+                <TableColumn fx:id="colDniSocio" prefWidth="110.0" text="DNI" />
+                <TableColumn fx:id="colEstadoSocio" prefWidth="110.0" text="Estado" />
+            </columns>
+        </TableView>
+
+        <TableView fx:id="tablaInscripciones" layoutX="35.0" layoutY="117.0" prefHeight="250.0" prefWidth="530.0">
+            <columns>
+                <TableColumn fx:id="colIdInscripcion" prefWidth="30.0" text="ID" />
+                <TableColumn fx:id="colNombreInscripcion" prefWidth="98.0" text="Nombre" />
+                <TableColumn fx:id="colApellidoInscripcion" prefWidth="98.0" text="Apellido" />
+                <TableColumn fx:id="colDniInscripcion" prefWidth="98.0" text="DNI" />
+                <TableColumn fx:id="colActividad" prefWidth="98.0" text="Actividad" />
+                <TableColumn fx:id="colEstadoInscripcion" prefWidth="98.0" text="Estado" />
+            </columns>
+        </TableView>
+
+    </children>
+
+</AnchorPane>

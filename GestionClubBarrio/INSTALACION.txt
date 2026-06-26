@@ -1,0 +1,37 @@
+Sistema de Gestión Administrativa para Clubes de Barrio
+-------------------------------------------------------
+
+INSTALACIÓN:
+	1- Descargar el archivo GestionClubBarrio.zip.
+	2- Descomprimir el archivo en la carpeta de destino. 
+	   (Ejemplo: C:/Usuarios/NombreUsuario/GestionClubBarrio)
+	3- Ingresar a la carpeta descomprimida.
+	4- Ejecutar el archivo GestionClubBarrio.exe.
+
+IMPORTANTE: No copiar ni mover GestionClubBarrio.exe fuera de la carpeta descomprimida.
+El sistema debe mantenerse dentro de la carpeta descomprimida, ya que necesita sus carpetas internas para funcionar correctamente.
+Para acceder al sistema de forma más simple, se puede crear un acceso directo al archivo GestionClubBarrio.exe.
+
+-------------------------------------------------------
+
+ACLARACIÓN SOBRE WINDOWS SMARTSCREEN: 
+Al abrir GestionClubBarrio.exe, Windows puede mostrar una advertencia de Windows SmartScreen indicando que la aplicación es desconocida. 
+Esto ocurre porque el prototipo no cuenta con una firma digital comercial. 
+El sistema corresponde a un proyecto académico y puede ejecutarse sin problemas. 
+Ante este aviso, seleccionar: Más información → Ejecutar de todas formas
+
+-------------------------------------------------------
+
+PRIMERA EJECUCIÓN 
+Para ingresar al sistema por primera vez, utilizar las siguientes credenciales: 
+	- Usuario: UsuarioEjemplo 
+	- Contraseña: Usuario123! 
+Requisitos de contraseña: Mínimo 8 caracteres, una mayúscula, una minúscula y un símbolo especial (Ej.: !, @, #, $, %, +)
+
+Una vez dentro del sistema, dirigirse al apartado Usuarios y crear un usuario propio, indicando nombre, apellido, contraseña y rol correspondiente.
+Roles disponibles: 
+	- Administrador 
+	- Tesorero 
+	- Secretario 
+	- Consulta 
+Luego de crear el nuevo usuario, se recomienda utilizar esa cuenta para operar el sistema.

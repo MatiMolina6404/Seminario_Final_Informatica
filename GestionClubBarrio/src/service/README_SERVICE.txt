@@ -1,0 +1,2 @@
+La sección Service contiene las clases responsables de aplicar la lógica funcional del sistema.
+Actúa como intermediaria entre los controladores y las clases DAO, validando los datos y coordinando las operaciones necesarias antes de acceder a la base de datos.

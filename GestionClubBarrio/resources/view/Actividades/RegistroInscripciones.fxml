@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" styleClass="pantalla" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Actividades.InscripcionController">
+
+    <children>
+
+        <Label alignment="CENTER" layoutX="180.0" layoutY="14.0" prefHeight="32.0" prefWidth="240.0" styleClass="titulo-pantalla" text="ACTIVIDADES DEPORTIVAS" />
+        <CheckBox fx:id="chkRegistrado" layoutX="28.0" layoutY="59.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="250.0" text="El deportista ya está registrado" />
+
+        <HBox layoutX="28.0" layoutY="91.0" prefHeight="30.0" prefWidth="250.0">
+            <children>
+                <Label prefHeight="25.0" prefWidth="110.0" text="Nro. Documento" />
+                <TextField fx:id="txtDniRegistrado" prefHeight="25.0" prefWidth="130.0" />
+            </children>
+        </HBox>
+
+        <Label layoutX="28.0" layoutY="132.0" styleClass="subtitulo" text="Registrar nuevo participante" />
+
+        <GridPane layoutX="28.0" layoutY="150.0" prefHeight="150.0" prefWidth="250.0">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="122.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="125.0" />
+            </columnConstraints>
+
+            <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" />
+            </rowConstraints>
+
+            <children>
+                <Label text="Nombre" />
+                <TextField fx:id="txtNombre" GridPane.columnIndex="1" />
+
+                <Label text="Apellido" GridPane.rowIndex="1" />
+                <TextField fx:id="txtApellido" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+
+                <Label text="Documento (DNI)" GridPane.rowIndex="2" />
+                <TextField fx:id="txtDNI" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+
+                <Label text="Teléfono" GridPane.rowIndex="3" />
+                <TextField fx:id="txtTelefono" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+
+                <Label text="Dirección" GridPane.rowIndex="4" />
+                <TextField fx:id="txtDireccion" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            </children>
+
+        </GridPane>
+
+        <ComboBox fx:id="cmbActividad" layoutX="28.0" layoutY="312.0" prefHeight="25.0" prefWidth="250.0" promptText="Seleccione la actividad deportiva" />
+
+        <TableView fx:id="tablaActividades" layoutX="330.0" layoutY="91.0" prefHeight="200.0" prefWidth="250.0">
+            <columns>
+                <TableColumn fx:id="colID" prefWidth="35.0" text="ID" />
+                <TableColumn fx:id="colNombre" prefWidth="100.0" text="Nombre" />
+                <TableColumn fx:id="colCantParticipantes" prefWidth="100.0" text="Participantes" />
+            </columns>
+        </TableView>
+
+        <Label alignment="CENTER" layoutX="367.0" layoutY="63.0" prefHeight="17.0" prefWidth="175.0" styleClass="subtitulo" text="ACTIVIDADES DISPONIBLES" textAlignment="CENTER" />
+
+        <Button fx:id="btnRegistrar" layoutX="28.0" layoutY="350.0" mnemonicParsing="false" onAction="#registrarInscripcion" prefHeight="32.0" prefWidth="250.0" styleClass="boton-principal" text="REGISTRAR INSCRIPCIÓN" />
+        <Button fx:id="btnBuscar" layoutX="329.0" layoutY="300.0" mnemonicParsing="false" onAction="#abrirBusquedaInscripciones" prefHeight="25.0" prefWidth="250.0" text="BUSCAR INSCRIPCIONES" />
+        <Button layoutX="330.0" layoutY="337.0" mnemonicParsing="false" onAction="#abrirGestionActividades" prefHeight="45.0" prefWidth="250.0" text="GESTIONAR ACTIVIDADES DEPORTIVAS" textAlignment="CENTER" wrapText="true" />
+
+    </children>
+
+</AnchorPane>

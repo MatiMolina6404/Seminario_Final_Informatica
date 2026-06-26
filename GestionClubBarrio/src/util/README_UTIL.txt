@@ -1,0 +1,2 @@
+La sección Util contiene clases auxiliares utilizadas dentro del sistema.
+En este paquete se incluyen funcionalidades de apoyo, como la configuración de ventanas, aplicación de estilos, manejo de seguridad, generación de contraseñas y otras operaciones que no pertenecen directamente a una entidad o módulo específico.

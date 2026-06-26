@@ -1,0 +1,237 @@
+/* Estilo general */
+
+.root {
+    -fx-font-family: "Segoe UI", "Arial";
+    -fx-background-color: #151619;
+}
+
+.pantalla {
+    -fx-background-color: #151619;
+}
+
+.anchor-pane {
+    -fx-background-color: #151619;
+}
+
+/* Labels */
+
+.label {
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+.titulo-pantalla {
+    -fx-background-color: #e52629;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-radius: 7px;
+    -fx-border-color: white;
+    -fx-border-radius: 7px;
+    -fx-border-width: 1px;
+    -fx-alignment: center;
+}
+
+.subtitulo {
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+/* Menú lateral */
+
+.menu-lateral {
+    -fx-background-color: #8f1b1b;
+    -fx-border-color: white;
+    -fx-border-width: 0 1 0 0;
+}
+
+.boton-menu {
+    -fx-background-color: #c91518;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-radius: 7px;
+    -fx-border-color: white;
+    -fx-border-radius: 7px;
+    -fx-border-width: 1px;
+    -fx-cursor: hand;
+}
+
+.boton-menu:hover {
+    -fx-background-color: #e52629;
+}
+
+#imgEscudoMenu {
+    -fx-cursor: hand;
+}
+
+/* Botones */
+
+.button {
+    -fx-background-color: #c91518;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-radius: 6px;
+    -fx-border-color: white;
+    -fx-border-radius: 6px;
+    -fx-border-width: 1px;
+    -fx-cursor: hand;
+}
+
+.button:hover {
+    -fx-background-color: #e52629;
+}
+
+.boton-principal {
+    -fx-background-color: #c91518;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-radius: 6px;
+    -fx-border-color: white;
+    -fx-border-radius: 6px;
+    -fx-border-width: 1px;
+}
+
+.boton-grande {
+    -fx-background-color: #c91518;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-radius: 7px;
+    -fx-border-color: white;
+    -fx-border-radius: 7px;
+    -fx-border-width: 1px;
+}
+
+/* Textfields */
+
+.text-field {
+    -fx-background-color: #3d3e45;
+    -fx-text-fill: white;
+    -fx-prompt-text-fill: #b8b8b8;
+    -fx-border-color: #e52629;
+    -fx-border-radius: 4px;
+    -fx-background-radius: 4px;
+}
+
+.text-field {
+    -fx-border-color: white;
+}
+
+/* Combobox */
+
+.combo-box {
+    -fx-background-color: #3d3e45;
+    -fx-border-color: #e52629;
+    -fx-border-radius: 4px;
+    -fx-background-radius: 4px;
+}
+
+.combo-box .list-cell {
+    -fx-background-color: #3d3e45;
+    -fx-text-fill: white;
+}
+
+.combo-box-popup .list-view {
+    -fx-background-color: #3d3e45;
+}
+
+.combo-box-popup .list-cell:hover {
+    -fx-background-color: #c91518;
+}
+
+/* Datepicker */
+
+.date-picker {
+    -fx-background-color: #3d3e45;
+    -fx-border-color: #e52629;
+    -fx-border-radius: 4px;
+    -fx-background-radius: 4px;
+}
+
+.date-picker .text-field {
+    -fx-background-color: #3d3e45;
+    -fx-text-fill: white;
+}
+
+/* Tablas */
+
+.table-view {
+    -fx-background-color: #151619;
+    -fx-border-color: white;
+    -fx-border-radius: 8px;
+    -fx-background-radius: 8px;
+    -fx-table-cell-border-color: #d7d7d7;
+}
+
+.table-view .column-header-background {
+    -fx-background-color: #8f1b1b;
+}
+
+.table-view .column-header {
+    -fx-background-color: #8f1b1b;
+    -fx-border-color: #d7d7d7;
+    -fx-border-width: 0 1 1 0;
+}
+
+.table-view .column-header .label {
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+.table-row-cell {
+    -fx-background-color: #151619;
+}
+
+.table-cell {
+    -fx-text-fill: white;
+    -fx-alignment: CENTER;
+    -fx-border-color: #d7d7d7;
+    -fx-border-width: 0 1 0 0;
+}
+
+.table-row-cell:filled:selected {
+    -fx-background-color: #e52629;
+}
+
+.table-row-cell:filled:selected .table-cell {
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+.table-view:focused .table-row-cell:filled:selected {
+    -fx-background-color: #e52629;
+}
+
+.table-view:focused .table-row-cell:filled:selected .table-cell {
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+/* Checkbox */
+
+.check-box {
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+.check-box .box {
+    -fx-background-color: #3d3e45;
+    -fx-border-color: white;
+    -fx-border-radius: 3px;
+}
+
+/* Textarea */
+
+.text-area {
+    -fx-background-color: #3d3e45;
+    -fx-text-fill: white;
+    -fx-border-color: #e52629;
+    -fx-border-radius: 4px;
+    -fx-background-radius: 4px;
+}
+
+.text-area .content {
+    -fx-background-color: #3d3e45;
+}
+
+.dialog-pane .header-panel .label {
+    -fx-text-fill: black;
+}

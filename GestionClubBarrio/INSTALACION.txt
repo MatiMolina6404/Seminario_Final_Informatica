@@ -26,9 +26,9 @@ PRIMERA EJECUCIÓN
 Para ingresar al sistema por primera vez, utilizar las siguientes credenciales: 
 	- Usuario: UsuarioEjemplo 
 	- Contraseña: Usuario123! 
-Requisitos de contraseña: Mínimo 8 caracteres, una mayúscula, una minúscula y un símbolo especial (Ej.: !, @, #, $, %, +)
 
 Una vez dentro del sistema, dirigirse al apartado Usuarios y crear un usuario propio, indicando nombre, apellido, contraseña y rol correspondiente.
+Requisitos de contraseña: Mínimo 8 caracteres, un número, una mayúscula, una minúscula y un símbolo especial (Ej.: !, @, #, $, %, +)
 Roles disponibles: 
 	- Administrador 
 	- Tesorero 

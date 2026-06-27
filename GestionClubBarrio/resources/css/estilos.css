@@ -235,3 +235,21 @@
 .dialog-pane .header-panel .label {
     -fx-text-fill: black;
 }
+
+/* Calendarios */
+
+.date-picker-popup .label {
+    -fx-text-fill: black;
+}
+
+.date-picker-popup .day-cell {
+    -fx-text-fill: black;
+}
+
+.date-picker-popup .week-number-cell {
+    -fx-text-fill: black;
+}
+
+.date-picker-popup .month-year-pane .label {
+    -fx-text-fill: black;
+}

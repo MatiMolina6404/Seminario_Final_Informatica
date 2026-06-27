@@ -26,7 +26,7 @@
         <ComboBox fx:id="cmbRol" layoutX="245.0" layoutY="211.0" prefWidth="200.0" />
 
         <Button layoutX="215.0" layoutY="285.0" onAction="#registrarUsuario" prefHeight="35.0" prefWidth="170.0" styleClass="boton-principal" text="REGISTRAR" />
-      <Label alignment="CENTER" layoutX="87.0" layoutY="350.0" prefHeight="35.0" prefWidth="426.0" text="Requisitos de contraseña: Mínimo 8 caracteres, una mayúscula, una minúscula y un símbolo especial (Ej.: !, @, #, $, %, +)" textAlignment="CENTER" wrapText="true" />
+      <Label alignment="CENTER" layoutX="87.0" layoutY="350.0" prefHeight="35.0" prefWidth="426.0" text="Requisitos de contraseña: Mínimo 8 caracteres, un número, una mayúscula, una minúscula y un símbolo especial (Ej.: !, @, #, $, %, +)" textAlignment="CENTER" wrapText="true" />
 
     </children>
 </AnchorPane>

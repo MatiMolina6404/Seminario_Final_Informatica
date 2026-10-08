@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="400.0" prefWidth="700.0" styleClass="pantalla" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.PrincipalController">
+
+    <children>
+
+        <VBox fx:id="menuLateral"
+              alignment="TOP_CENTER"
+              prefHeight="400.0"
+              prefWidth="115.0"
+              spacing="8.0"
+              styleClass="menu-lateral">
+            <padding>
+                <Insets bottom="10.0" left="5.0" right="5.0" top="20.0" />
+            </padding>
+            
+            <children>
+                <ImageView fx:id="imgEscudoMenu" fitHeight="65.0" fitWidth="65.0" onMouseClicked="#volverInicio" pickOnBounds="true" preserveRatio="true" />
+                <Label fx:id="lblNombreClub"
+                       alignment="CENTER"
+                       prefHeight="35.0"
+                       prefWidth="105.0"
+                       styleClass="nombre-club-menu"
+                       text=""
+                       textAlignment="CENTER"
+                       wrapText="true"/>
+                <Button fx:id="btnGestionSocios" mnemonicParsing="false" onAction="#abrirGestionSocios" prefHeight="20.0" prefWidth="105.0" styleClass="boton-menu" text="Gestión Socios" textAlignment="CENTER" wrapText="true" />
+                <Button fx:id="btnPagos" mnemonicParsing="false" onAction="#abrirPagos" prefHeight="20.0" prefWidth="105.0" styleClass="boton-menu" text="Pagos" textAlignment="CENTER" wrapText="true" />
+                <Button fx:id="btnActividades" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#abrirActividades" prefHeight="42.0" prefWidth="105.0" styleClass="boton-menu" text="Actividades Deportivas" textAlignment="CENTER" wrapText="true" />
+                <Button fx:id="btnEstados" mnemonicParsing="false" onAction="#abrirConsultaEstados" prefHeight="42.0" prefWidth="105.0" styleClass="boton-menu" text="Consultar Estados" textAlignment="CENTER" wrapText="true" />
+                <Button fx:id="btnReportes" mnemonicParsing="false" onAction="#abrirReportes" prefHeight="42.0" prefWidth="105.0" styleClass="boton-menu" text="Generar Reportes" textAlignment="CENTER" wrapText="true" />
+                <Button fx:id="btnUsuarios" mnemonicParsing="false" onAction="#abrirUsuarios" prefHeight="20.0" prefWidth="105.0" styleClass="boton-menu" text="Usuarios" />
+            </children>
+        </VBox>
+
+        <AnchorPane fx:id="contenedor" layoutX="115.0" prefHeight="400.0" prefWidth="585.0" styleClass="pantalla">
+            <children>
+                <AnchorPane fx:id="pantallaInicio" prefHeight="400.0" prefWidth="585.0" styleClass="pantalla">
+                    <children>
+                        <ImageView fx:id="imgEscudoInicio" fitHeight="150.0" fitWidth="150.0" layoutX="218.0" layoutY="64.0" pickOnBounds="true" preserveRatio="true" />
+                        <Label fx:id="lblNombreSistema"
+                               alignment="CENTER"
+                               layoutX="95.0"
+                               layoutY="214.0"
+                               prefHeight="50.0"
+                               prefWidth="395.0"
+                               styleClass="titulo-pantalla"
+                               text=""
+                               textAlignment="CENTER"
+                               wrapText="true"/>
+                     <Button fx:id="btnConfiguracion" layoutX="541.0" layoutY="49.0" mnemonicParsing="false" onAction="#abrirConfiguracion" prefHeight="30.0" prefWidth="30.0" styleClass="boton-configuracion" text="⚙" />
+                    </children>
+                </AnchorPane>
+            </children>
+        </AnchorPane>
+    </children>
+
+</AnchorPane>

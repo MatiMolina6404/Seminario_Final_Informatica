@@ -1,0 +1,285 @@
+/* Estilo general */
+
+.root {
+    /* Colores por defecto. Los reemplaza la configuración (ver util/Ventana.java). */
+    -color-principal: #c91518;
+    -color-secundario: #3d3e45;
+    -color-terciario: #151619;
+    -texto-principal: white;
+    -texto-secundario: white;
+    -texto-terciario: white;
+
+    -fx-font-family: "Segoe UI", "Arial";
+    -fx-background-color: -color-terciario;
+}
+
+.pantalla {
+    -fx-background-color: -color-terciario;
+}
+
+.anchor-pane {
+    -fx-background-color: -color-terciario;
+}
+
+/* Labels */
+
+.label {
+    -fx-text-fill: -texto-terciario;
+    -fx-font-weight: bold;
+}
+
+.titulo-pantalla {
+    -fx-background-color: -color-principal;
+    -fx-text-fill: -texto-principal;
+    -fx-font-weight: bold;
+    -fx-background-radius: 7px;
+    -fx-border-color: -texto-principal;
+    -fx-border-radius: 7px;
+    -fx-border-width: 1px;
+    -fx-alignment: center;
+}
+
+.subtitulo {
+    -fx-text-fill: -texto-terciario;
+    -fx-font-weight: bold;
+}
+
+/* Menú lateral */
+
+.menu-lateral {
+    -fx-background-color: -color-secundario;
+    -fx-border-color: -texto-secundario;
+    -fx-border-width: 0 1 0 0;
+}
+
+.nombre-club-menu {
+    -fx-text-fill: -texto-secundario;
+}
+
+.boton-menu {
+    -fx-background-color: -color-principal;
+    -fx-text-fill: -texto-principal;
+    -fx-font-weight: bold;
+    -fx-background-radius: 7px;
+    -fx-border-color: -texto-principal;
+    -fx-border-radius: 7px;
+    -fx-border-width: 1px;
+    -fx-cursor: hand;
+}
+
+.boton-menu:hover {
+    -fx-background-color: derive(-color-principal, 25%);
+}
+
+#imgEscudoMenu {
+    -fx-cursor: hand;
+}
+
+/* Botones */
+
+.button {
+    -fx-background-color: -color-principal;
+    -fx-text-fill: -texto-principal;
+    -fx-font-weight: bold;
+    -fx-background-radius: 6px;
+    -fx-border-color: -texto-principal;
+    -fx-border-radius: 6px;
+    -fx-border-width: 1px;
+    -fx-cursor: hand;
+}
+
+.button:hover {
+    -fx-background-color: derive(-color-principal, 25%);
+}
+
+.boton-principal {
+    -fx-background-color: -color-principal;
+    -fx-text-fill: -texto-principal;
+    -fx-font-weight: bold;
+    -fx-background-radius: 6px;
+    -fx-border-color: -texto-principal;
+    -fx-border-radius: 6px;
+    -fx-border-width: 1px;
+}
+
+.boton-grande {
+    -fx-background-color: -color-principal;
+    -fx-text-fill: -texto-principal;
+    -fx-font-weight: bold;
+    -fx-background-radius: 7px;
+    -fx-border-color: -texto-principal;
+    -fx-border-radius: 7px;
+    -fx-border-width: 1px;
+}
+
+/* Textfields */
+
+.text-field {
+    -fx-background-color: -color-secundario;
+    -fx-text-fill: -texto-secundario;
+    -fx-prompt-text-fill: gray;
+    -fx-border-color: -texto-secundario;
+    -fx-border-radius: 4px;
+    -fx-background-radius: 4px;
+}
+
+/* Combobox */
+
+.combo-box {
+    -fx-background-color: -color-secundario;
+    -fx-border-color: -texto-secundario;
+    -fx-border-radius: 4px;
+    -fx-background-radius: 4px;
+}
+
+.combo-box .list-cell {
+    -fx-background-color: -color-secundario;
+    -fx-text-fill: -texto-secundario;
+}
+
+.combo-box .arrow-button .arrow {
+    -fx-background-color: -texto-secundario;
+}
+
+.combo-box-popup .list-view {
+    -fx-background-color: -color-secundario;
+}
+
+.combo-box-popup .list-cell {
+    -fx-background-color: -color-secundario;
+    -fx-text-fill: -texto-secundario;
+}
+
+.combo-box-popup .list-cell:hover {
+    -fx-background-color: -color-principal;
+    -fx-text-fill: -texto-principal;
+}
+
+/* Datepicker */
+
+.date-picker {
+    -fx-background-color: -color-secundario;
+    -fx-border-color: -texto-secundario;
+    -fx-border-radius: 4px;
+    -fx-background-radius: 4px;
+}
+
+.date-picker .text-field {
+    -fx-background-color: -color-secundario;
+    -fx-text-fill: -texto-secundario;
+}
+
+/* Tablas */
+
+.table-view {
+    -fx-background-color: -color-secundario;
+    -fx-border-color: -texto-terciario;
+    -fx-border-radius: 8px;
+    -fx-background-radius: 8px;
+    -fx-table-cell-border-color: gray;
+}
+
+.table-view .column-header-background {
+    -fx-background-color: -color-principal;
+}
+
+.table-view .column-header-background .filler {
+    -fx-background-color: -color-principal;
+}
+
+.table-view .column-header {
+    -fx-background-color: -color-principal;
+    -fx-border-color: -texto-principal;
+    -fx-border-width: 0 1 1 0;
+}
+
+.table-view .column-header .label {
+    -fx-text-fill: -texto-principal;
+    -fx-font-weight: bold;
+}
+
+.table-view .placeholder .label {
+    -fx-text-fill: -texto-secundario;
+}
+
+.table-row-cell {
+    -fx-background-color: -color-secundario;
+}
+
+.table-cell {
+    -fx-text-fill: -texto-secundario;
+    -fx-alignment: CENTER;
+    -fx-border-color: gray;
+    -fx-border-width: 0 1 0 0;
+}
+
+.table-row-cell:filled:selected {
+    -fx-background-color: -color-principal;
+}
+
+.table-row-cell:filled:selected .table-cell {
+    -fx-text-fill: -texto-principal;
+    -fx-font-weight: bold;
+}
+
+.table-view:focused .table-row-cell:filled:selected {
+    -fx-background-color: -color-principal;
+}
+
+.table-view:focused .table-row-cell:filled:selected .table-cell {
+    -fx-text-fill: -texto-principal;
+    -fx-font-weight: bold;
+}
+
+/* Checkbox */
+
+.check-box {
+    -fx-text-fill: -texto-terciario;
+    -fx-font-weight: bold;
+}
+
+.check-box .box {
+    -fx-background-color: -color-secundario;
+    -fx-border-color: -texto-terciario;
+    -fx-border-radius: 3px;
+}
+
+.check-box:selected .mark{
+    -fx-background-color: -texto-secundario;
+}
+
+/* Textarea */
+
+.text-area {
+    -fx-background-color: -color-secundario;
+    -fx-text-fill: -texto-secundario;
+    -fx-border-color: -texto-secundario;
+    -fx-border-radius: 4px;
+    -fx-background-radius: 4px;
+}
+
+.text-area .content {
+    -fx-background-color: -color-secundario;
+}
+
+.dialog-pane .header-panel .label {
+    -fx-text-fill: black;
+}
+
+/* Calendarios */
+
+.date-picker-popup .label {
+    -fx-text-fill: black;
+}
+
+.date-picker-popup .day-cell {
+    -fx-text-fill: black;
+}
+
+.date-picker-popup .week-number-cell {
+    -fx-text-fill: black;
+}
+
+.date-picker-popup .month-year-pane .label {
+    -fx-text-fill: black;
+}

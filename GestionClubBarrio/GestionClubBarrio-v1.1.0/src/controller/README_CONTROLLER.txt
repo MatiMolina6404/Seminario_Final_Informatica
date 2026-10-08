@@ -1,0 +1,2 @@
+La sección Controller contiene las clases encargadas de gestionar la interacción entre las interfaces gráficas y la lógica del sistema.
+Estos controladores reciben los eventos de las pantallas, validan los datos ingresados por el usuario y coordinan las operaciones con los servicios correspondientes.

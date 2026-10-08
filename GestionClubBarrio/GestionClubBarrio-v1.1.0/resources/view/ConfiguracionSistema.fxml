@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ColorPicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<AnchorPane prefHeight="400.0" prefWidth="585.0" styleClass="pantalla" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ConfiguracionSistemaController">
+
+    <children>
+
+        <!-- Título de la configuración -->
+        <Label alignment="CENTER" layoutX="25.0" layoutY="15.0" prefHeight="30.0" prefWidth="535.0" styleClass="titulo-pantalla" text="CONFIGURACIÓN DEL SISTEMA" textAlignment="CENTER" />
+
+        <!-- Datos principales -->
+        <GridPane hgap="10.0" layoutX="30.0" layoutY="60.0" prefWidth="525.0" vgap="8.0">
+            <children>
+                <Label prefWidth="140.0" text="Nombre del club:" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+                <TextField fx:id="txtNombreClub" prefWidth="365.0" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+                <Label prefWidth="140.0" text="Nombre del sistema:" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+                <TextField fx:id="txtNombreSistema" prefHeight="25.0" prefWidth="381.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            </children>
+            <columnConstraints>
+                <ColumnConstraints />
+                <ColumnConstraints />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints />
+                <RowConstraints />
+            </rowConstraints>
+        </GridPane>
+
+        <!-- Configuración del escudo -->
+        <HBox alignment="CENTER_LEFT" layoutX="29.0" layoutY="131.0" prefHeight="50.0" prefWidth="525.0" spacing="10.0">
+            <children>
+                <Label prefHeight="17.0" prefWidth="99.0" text="Escudo actual:" />
+                <ImageView fx:id="imgEscudo" fitHeight="45.0" fitWidth="60.0" preserveRatio="true" />
+                <Button mnemonicParsing="false" onAction="#seleccionarEscudo" prefHeight="25.0" prefWidth="178.0" text="Seleccionar imagen" />
+            </children>
+        </HBox>
+
+        <!-- Colores del sistema y vencimiento de cuotas -->
+        <Label layoutX="30.0" layoutY="191.0" styleClass="subtitulo" text="COLORES DEL SISTEMA" />
+        <Label layoutX="293.0" layoutY="191.0" styleClass="subtitulo" text="VENCIMIENTO DE CUOTAS (EN DÍAS)" />
+        <GridPane hgap="10.0" layoutX="29.0" layoutY="219.0" prefHeight="92.0" prefWidth="491.0" vgap="8.0">
+            <columnConstraints>
+                <ColumnConstraints maxWidth="135.33331298828125" minWidth="113.33331298828125" prefWidth="113.33331298828125" />
+                <ColumnConstraints maxWidth="156.66668701171875" minWidth="97.33335367838542" prefWidth="97.33335367838542" />
+            <ColumnConstraints maxWidth="156.66668701171875" minWidth="15.33331298828125" prefWidth="23.33331298828125" />
+                <ColumnConstraints maxWidth="224.33333333333331" minWidth="95.33335367838544" prefWidth="126.00002034505206" />
+                <ColumnConstraints maxWidth="90.0" minWidth="60.0" prefWidth="90.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints maxHeight="25.333333333333332" minHeight="25.333333333333332" prefHeight="25.333333333333332" />
+                <RowConstraints maxHeight="25.33333333333333" minHeight="25.33333333333333" prefHeight="25.33333333333333" />
+                <RowConstraints />
+            </rowConstraints>
+            <children>
+                <Label text="Color principal:" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+                <ColorPicker fx:id="colorPrincipal" prefHeight="25.0" prefWidth="153.0" GridPane.columnIndex="1" GridPane.rowIndex="0">
+                    <tooltip><Tooltip text="Botones y encabezados de las tablas" /></tooltip>
+                </ColorPicker>
+                <Label text="Color secundario:" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+                <ColorPicker fx:id="colorMenu" prefWidth="130.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                    <tooltip><Tooltip text="Menú, cuerpo de las tablas y campos de los formularios" /></tooltip>
+                </ColorPicker>
+                <Label text="Color terciario:" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+                <ColorPicker fx:id="colorFondo" prefWidth="130.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                    <tooltip><Tooltip text="Fondo de todas las pantallas" /></tooltip>
+                </ColorPicker>
+                <Label text="Socio deudor:" GridPane.columnIndex="3" GridPane.rowIndex="0" />
+                <TextField fx:id="txtDiasDeudor" prefWidth="60.0" GridPane.columnIndex="4" GridPane.rowIndex="0">
+                    <tooltip><Tooltip text="Días sin pagar la cuota societaria para que el socio pase a Deudor" /></tooltip>
+                </TextField>
+                <Label prefHeight="17.0" prefWidth="84.0" text="Socio inactivo:" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                <TextField fx:id="txtDiasInactivo" prefWidth="60.0" GridPane.columnIndex="4" GridPane.rowIndex="1">
+                    <tooltip><Tooltip text="Días sin pagar la cuota societaria para que el socio pase a Inactivo" /></tooltip>
+                </TextField>
+                <Label text="Inscripción inactiva:" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                <TextField fx:id="txtDiasInscripcion" prefWidth="60.0" GridPane.columnIndex="4" GridPane.rowIndex="2">
+                    <tooltip><Tooltip text="Días sin pagar la actividad para que la inscripción pase a Inactiva" /></tooltip>
+                </TextField>
+            </children>
+        </GridPane>
+
+        <!-- Botones de la configuración -->
+        <HBox alignment="CENTER" layoutX="29.0" layoutY="340.0" prefWidth="525.0" spacing="20.0">
+            <children>
+                <Button mnemonicParsing="false" onAction="#guardarConfiguracion" prefWidth="180.0" text="GUARDAR CAMBIOS" />
+                <Button mnemonicParsing="false" onAction="#volver" prefWidth="120.0" text="VOLVER" />
+            </children>
+        </HBox>
+
+    </children>
+
+</AnchorPane>

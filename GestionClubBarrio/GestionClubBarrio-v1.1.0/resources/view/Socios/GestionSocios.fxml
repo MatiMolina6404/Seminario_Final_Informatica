@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.control.DatePicker?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" styleClass="pantalla" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Socios.SocioController">
+
+    <children>
+
+        <Label alignment="CENTER" layoutX="225.0" layoutY="14.0" prefHeight="32.0" prefWidth="150.0" styleClass="titulo-pantalla" text="GESTIÓN SOCIOS" />
+        <Label layoutX="28.0" layoutY="67.0" styleClass="subtitulo" text="REGISTRAR NUEVO SOCIO" />
+
+        <GridPane layoutX="28.0" layoutY="97.0" prefHeight="180.0" prefWidth="250.0">
+
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="90.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="165.0" />
+            </columnConstraints>
+
+            <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" />
+            </rowConstraints>
+
+            <children>
+                <Label text="NOMBRE" />
+                <TextField fx:id="txtNombre" GridPane.columnIndex="1" />
+
+                <Label text="APELLIDO" GridPane.rowIndex="1" />
+                <TextField fx:id="txtApellido" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+
+                <Label text="DNI" GridPane.rowIndex="2" />
+                <TextField fx:id="txtDni" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+
+                <Label text="TELÉFONO" GridPane.rowIndex="3" />
+                <TextField fx:id="txtTelefono" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+
+                <Label text="DIRECCIÓN" GridPane.rowIndex="4" />
+                <TextField fx:id="txtDireccion" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+
+                <Label text="FECHA ALTA" GridPane.rowIndex="5" />
+                <DatePicker fx:id="dpFechaAlta" editable="false" maxWidth="Infinity" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+
+            </children>
+
+        </GridPane>
+
+        <Button layoutX="87.0" layoutY="295.0" mnemonicParsing="false" onAction="#registrarSocio" prefHeight="17.0" prefWidth="131.0" styleClass="boton-principal" text="REGISTRAR SOCIO" wrapText="true" />
+        <Label layoutX="363.0" layoutY="67.0" styleClass="subtitulo" text="ÚLTIMOS SOCIOS REGISTRADOS" />
+
+        <TableView fx:id="tablaSocios" layoutX="330.0" layoutY="97.0" prefHeight="200.0" prefWidth="250.0">
+            <columns>
+                <TableColumn fx:id="colId" prefWidth="75.0" text="Nro. Socio" />
+                <TableColumn fx:id="colNombre" prefWidth="80.0" text="Nombre" />
+                <TableColumn fx:id="colApellido" text="Apellido" />
+            </columns>
+        </TableView>
+
+        <Button layoutX="220.0" layoutY="350.0" mnemonicParsing="false" onAction="#abrirBusqueda" prefHeight="32.0" prefWidth="160.0" styleClass="boton-principal" text="BUSCAR SOCIO" wrapText="true" />
+
+    </children>
+
+</AnchorPane>

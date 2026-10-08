@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.control.DatePicker?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" styleClass="pantalla" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Pagos.PagoController">
+
+    <children>
+
+        <Label alignment="CENTER" layoutX="225.0" layoutY="14.0" prefHeight="32.0" prefWidth="150.0" styleClass="titulo-pantalla" text="GESTIÓN PAGOS" textAlignment="CENTER" />
+        <Label layoutX="87.0" layoutY="56.0" styleClass="subtitulo" text="REGISTRAR NUEVO PAGO" />
+
+        <GridPane layoutX="25.0" layoutY="85.0" prefHeight="234.0" prefWidth="350.0">
+
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="140.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="234.0" minWidth="10.0" prefWidth="190.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="140.0" minWidth="10.0" prefWidth="140.0" />
+            </columnConstraints>
+
+            <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="26.0" />
+                <RowConstraints minHeight="10.0" prefHeight="26.0" />
+                <RowConstraints minHeight="10.0" prefHeight="26.0" />
+                <RowConstraints minHeight="10.0" prefHeight="26.0" />
+                <RowConstraints minHeight="10.0" prefHeight="26.0" />
+                <RowConstraints minHeight="10.0" prefHeight="26.0" />
+                <RowConstraints minHeight="10.0" prefHeight="26.0" />
+                <RowConstraints minHeight="10.0" prefHeight="26.0" />
+                <RowConstraints minHeight="10.0" prefHeight="26.0" />
+            </rowConstraints>
+
+            <children>
+
+                <Label text="CONCEPTO" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+                <ComboBox fx:id="cmbConceptoPago" prefWidth="240.0" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+
+                <Label fx:id="lblBuscarPor" text="DNI" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+                <TextField fx:id="txtIdBusqueda" promptText="Ingrese DNI" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+
+                <Button mnemonicParsing="false" onAction="#buscarRegistro" prefHeight="25.0" prefWidth="85.0" text="BUSCAR" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+
+                <Label text="NOMBRE" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+                <TextField fx:id="txtNombre" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+
+                <Label text="APELLIDO" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+                <TextField fx:id="txtApellido" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+
+                <Label fx:id="lblActividad" text="ACTIVIDAD" GridPane.columnIndex="0" GridPane.rowIndex="4" />
+                <TextField fx:id="txtActividad" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+
+                <Label text="PERÍODO" GridPane.columnIndex="0" GridPane.rowIndex="5" />
+                <TextField fx:id="txtPeriodo" promptText="Ej: 2026-06" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+
+                <Label text="MONTO" GridPane.columnIndex="0" GridPane.rowIndex="6" />
+                <TextField fx:id="txtMonto" promptText="Ingrese monto" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+
+                <Label text="TIPO" GridPane.columnIndex="0" GridPane.rowIndex="7" />
+                <ComboBox fx:id="cmbTipoPago" prefWidth="240.0" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+
+                <Label text="FECHA PAGO" GridPane.columnIndex="0" GridPane.rowIndex="8" />
+                <DatePicker fx:id="dpFechaPago" editable="false" maxWidth="Infinity" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+
+            </children>
+
+        </GridPane>
+
+        <Button layoutX="76.0" layoutY="325.0" mnemonicParsing="false" onAction="#registrarPago" prefHeight="32.0" prefWidth="160.0" styleClass="boton-principal" text="REGISTRAR PAGO" wrapText="true" />
+        <Button layoutX="375.0" layoutY="325.0" mnemonicParsing="false" onAction="#abrirHistorialPagos" prefHeight="32.0" prefWidth="200.0" styleClass="boton-principal" text="HISTORIAL DE PAGOS" wrapText="true" />
+
+    </children>
+
+</AnchorPane>

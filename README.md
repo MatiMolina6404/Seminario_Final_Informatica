@@ -8,8 +8,6 @@ Repositorio correspondiente al proyecto desarrollado para la asignatura **Semina
 
 Sistema de escritorio desarrollado para la administración y gestión de la información de un club de barrio.
 
-El proyecto fue desarrollado de manera incremental, incorporando nuevas funcionalidades, mejoras de seguridad, validaciones y herramientas de configuración en cada entrega.
-
 ---
 
 ## 📚 Entregas
